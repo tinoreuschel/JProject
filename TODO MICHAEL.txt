@@ -1,0 +1,49 @@
+bitte in der DB anlegen:
+		LoginName = Admin
+		Passwort = 8be3c943b1609fffbfc51aad666d0a04adf83c9d  (KlartextPasswort = Password)
+
+
+
+GUI
+*********
+
+ShowUserSettings =>
+	(optional)Alle Tasks des Users anzeigen,
+	(optional)Selfdelete.
+
+Übersicht =>
+	(optional)Projekt suchen
+
+
+Controller
+*********
+
+Manager
+*********
+(Semesterferien)SearchProject -> 
+	Livesuche
+(Semesterferien)SearchUser -> 
+	Livesuche
+
+DA-Schicht
+**********
+(Semesterferien)an JPA anpassen
+
+Datenbank
+**********
+(KEINE CHANCE)User -> Comment =>
+	Cascade Delete wegmachn
+	(wenn user gelöscht, comments nicht löschen!)
+	(das geht einfach nich...er kann dann kein null rausladen aus der db -.-)
+	(IDEE: verknüpfung aufheben und nur nen string in comment reinschreiben...kein FK)<---javaebene
+
+
+(optional)Password zu int machen wegen hashwert = int(NE DOCH NICH!...String, weil int-wert egal)
+(Semesterferien)Datenbank auf JPA umbauen
+
+Bekannte "Fehler":
+**********
+
+Wenn user über adminconsole gelöscht ->
+	Comments weg,
+	Projekt ohne leader möglich.

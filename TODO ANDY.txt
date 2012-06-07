@@ -1,0 +1,38 @@
+bitte in der DB anlegen:
+		LoginName = Admin
+		Passwort = 8be3c943b1609fffbfc51aad666d0a04adf83c9d  (KlartextPasswort = Password)
+
+
+
+
+GUI
+*********
+
+
+Controller
+*********
+
+Javadoc in den Actions fertig machen!...Beispiel in ShowProjectAction
+
+Manager
+*********
+
+
+DA-Schicht
+**********
+
+
+Datenbank
+**********
+		
+
+Bekannte Fehler
+**********
+
+Docu
+**********
+Admin selbst verantwortlich für löschen von Usern =>
+	möglicher Seiteneffekt -> Projekte ohne Leader
+
+
+	
